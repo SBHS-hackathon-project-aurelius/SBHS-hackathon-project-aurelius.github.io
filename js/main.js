@@ -21,6 +21,7 @@ const themeMap = {
   
   document.getElementById('themeButton').onclick = toggleTheme;
   
+  console.log(gsap)
   
   let sections = gsap.utils.toArray(".panel");
   
@@ -37,3 +38,11 @@ const themeMap = {
       end: "+=3500",
     }
   });
+
+gsap.from("#project-title", { scrollTrigger: {scrub: 1 }, x: 400});
+gsap.from("#cloud1", { scrollTrigger: {scrub: 1}, x: 60})
+gsap.from("#cloud2", { scrollTrigger: {scrub: 1}, x: -500})
+
+gsap.to(".panel.one_0", { scrollTrigger: { scrub: 1 }, scale: 1.5 });
+gsap.to("#cloud2", { scrollTrigger: {scrub: 1}, x: 200})
+gsap.to("#cloud1", { scrollTrigger: {scrub: 1}, x: -1500})
