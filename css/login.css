@@ -182,7 +182,23 @@ form {
                   rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   }
   
-  input[type="submit"] {
+  button[type="submit"] {
+      font-size: 16px;
+      line-height: 28px;
+      padding: 8px 16px;
+      width: 100%;
+      min-height: 44px;
+      border: unset;
+      border-radius: 4px;
+      outline-color: rgb(84 105 212 / 0.5);
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px;
       background-color: rgb(84, 105, 212);
       box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
                   rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -222,39 +238,3 @@ form {
       margin: 0 10px;
   }
   
-  .animationRightLeft {
-    animation: animationRightLeft 2s ease-in-out infinite;
-  }
-  .animationLeftRight {
-    animation: animationLeftRight 2s ease-in-out infinite;
-  }
-  .tans3s {
-    animation: animationLeftRight 3s ease-in-out infinite;
-  }
-  .tans4s {
-    animation: animationLeftRight 4s ease-in-out infinite;
-  }
-  
-  @keyframes animationLeftRight {
-    0% {
-      transform: translateX(0px);
-    }
-    50% {
-      transform: translateX(1000px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  } 
-  
-  @keyframes animationRightLeft {
-    0% {
-      transform: translateX(0px);
-    }
-    50% {
-      transform: translateX(-1000px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  } 
