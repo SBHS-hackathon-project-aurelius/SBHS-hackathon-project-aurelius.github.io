@@ -3,6 +3,7 @@
   <meta charset="utf-8">
   <title>Aurelius: Sign in</title>
   <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <script defer src="/js/login.js"></script>
 </head>
 
 <body>
@@ -60,7 +61,7 @@
                       <a href="#">Forgot your password?</a>
                     </div> -->
                   </div>
-                  <input type="password" name="password">
+                  <input id="userPassword" type="password" name="password">
                 </div>
                 <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                   <!-- <label for="checkbox">
@@ -68,7 +69,8 @@
                   </label> -->
                 </div>
                 <div class="field padding-bottom--24">
-                  <button type="submit" name="submit" onclick="verifyLogin();">Continue</button>
+                  <!-- <button type="submit" name="submit" onclick="verifyLogin()">Continue</button> -->
+                  <button type="submit" name="submit" onclick="WriteToFile()">Continue</button>
                 </div>
                 <!-- <div class="field">
                   <a class="ssolink" href="#">Use single sign-on (Google) instead</a>
@@ -88,6 +90,25 @@
       </div>
     </div>
   </div>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA-PBSa3df_76a48WuGL_ha2qtcMFNdq9M",
+      authDomain: "project-aurelius.firebaseapp.com",
+      projectId: "project-aurelius",
+      storageBucket: "project-aurelius.appspot.com",
+      messagingSenderId: "359496341655",
+      appId: "1:359496341655:web:df04707b35b0e5dc4ab1d2"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
 
 </html>

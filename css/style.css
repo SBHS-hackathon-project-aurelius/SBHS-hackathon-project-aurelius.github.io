@@ -273,7 +273,7 @@ main {
 
 
 .panel.two_0 {
-  background-color: darkblue;
+  background: url(/assets/main_wallpaper.jpeg) no-repeat center center fixed;
 }
 .panel.three_0 {
   background-color: blue;
